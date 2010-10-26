@@ -1,0 +1,42 @@
+alias .a="$EDITOR ~/.aliases && source ~/.aliases"
+
+# Rails
+alias tfdev='tail -f -n 200 log/development.log'
+
+# Git
+alias gs='git status'
+alias gb='git branch'
+alias gl='git log'
+alias gap='git add --patch'
+alias gco='git checkout'
+alias gcm='git commit -m'
+alias gca='git commit --amend'
+alias gpp='git pull --rebase && git push'
+alias git-wtf='~/Projects/mainline/bin/git-wtf -r'
+
+# Relevance Pair
+alias pair='/Users/dce/Projects/relevance-etc/scripts/pair'
+
+# Git-SVN
+alias gsr='git svn rebase'
+alias gsd='git svn dcommit'
+
+# Passenger
+alias rr="touch tmp/restart.txt"
+
+# Rails
+alias ss="script/server"
+alias sc="script/console"
+alias sg="script/generate"
+
+# MP3 Downloader
+alias mp3="~/Projects/scripts/mp3.rb"
+
+# MySQL
+alias mysqlstart="sudo su root -c '(/opt/local/bin/mysqld_safe5 &); ln -s /opt/local/var/run/mysql5/mysqld.sock /tmp/mysql.sock'"
+
+# Postgres
+alias pgstart="sudo su postgres -c '/opt/local/lib/postgresql83/bin/postgres -D /opt/local/var/db/postgresql83/defaultdb > /dev/null 2>&1 &'"
+
+# Notify
+alias restart_notify="ps -ef | grep [N]otify | awk '{print \"kill \" \$2}' | sh"
