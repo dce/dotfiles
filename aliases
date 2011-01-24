@@ -4,12 +4,15 @@ alias .a="$EDITOR ~/.aliases && source ~/.aliases"
 alias gs='git status'
 alias gb='git branch'
 alias gl='git log'
+alias glo='git log --oneline'
 alias gap='git add --patch'
 alias gco='git checkout'
+alias gcv='git commit -v'
 alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gpp='git pull --rebase && git push'
-alias git-wtf='~/Projects/mainline/bin/git-wtf -r'
+alias gmf='git merge --ff-only'
+alias gcp='git cherry-pick'
 
 # Passenger
 alias rr="touch tmp/restart.txt"
