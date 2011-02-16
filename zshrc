@@ -1,6 +1,6 @@
 export CLICOLOR=1
 export NODE_PATH=/usr/local/lib/node
-export PATH=$PATH:~/Projects/scripts
+export PATH=$PATH:~/Projects/scripts:/usr/local/share/npm/bin
 
 # completion
 autoload -U compinit
@@ -46,6 +46,6 @@ setopt histignoredups
 export HISTSIZE=200
 
 # cdpath
-export CDPATH=~/Projects
+cdpath=(~ ~/Projects)
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
