@@ -13,6 +13,7 @@ alias gca='git commit --amend'
 alias gpp='git pull --rebase && git push'
 alias gmf='git merge --ff-only'
 alias gcp='git cherry-pick'
+alias gwp='git whatchanged -p'
 
 # Passenger
 alias rr="touch tmp/restart.txt"
@@ -25,3 +26,6 @@ alias tfdev='tail -f -n 200 log/development.log'
 
 # MP3 Downloader
 alias mp3="~/Projects/scripts/mp3.rb"
+
+# Homebrew
+alias bio="brew install `brew outdated` && brew cleanup"
