@@ -10,6 +10,7 @@ set smarttab " do the right thing
 set expandtab " use spaces instead of tabs
 
 set number " line numbers
+set hidden
 
 colo github
 
@@ -18,3 +19,5 @@ map <leader>d :NERDTreeToggle<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <F2> :set nowrap!<CR>
+
+command Md !markdown % | bcat

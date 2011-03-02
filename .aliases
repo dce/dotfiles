@@ -1,4 +1,5 @@
 alias .a="$EDITOR ~/.aliases && source ~/.aliases"
+alias .v="$EDITOR ~/.vimrc"
 
 # Git
 alias gs='git status'
@@ -27,5 +28,3 @@ alias tfdev='tail -f -n 200 log/development.log'
 # MP3 Downloader
 alias mp3="~/Projects/scripts/mp3.rb"
 
-# Homebrew
-alias bio="brew install `brew outdated` && brew cleanup"
