@@ -6,4 +6,4 @@
   diff = always
 [core]
   editor = mvim -f
-  excludesfile = /Users/dce/.gitignore
+  excludesfile = /Users/dce/.gitignore_global
