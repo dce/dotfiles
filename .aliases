@@ -2,6 +2,7 @@ alias .a="$EDITOR ~/.aliases && source ~/.aliases"
 alias .v="$EDITOR ~/.vimrc"
 
 alias ll="ls -la"
+alias up="cd .."
 
 # Git
 alias gs='git status'
