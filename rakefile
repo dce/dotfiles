@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+
+task :update_vim_plugins do |t|
+  sh "git submodule foreach 'git pull origin master'"
+end
+
+task :install do |t|
+  files_to_ignore = %w(
+    .
+    ..
+    .git
+    .gitmodules
+    rakefile
+    README.md)
+
+  home = File.expand_path('~')
+
+  Dir.glob('*', File::FNM_DOTMATCH).each do |file|
+    next if files_to_ignore.include?(file) || file =~ /.swp$/
+
+    target = File.join(home, "#{file}")
+
+    if File.exists? target
+      puts " !! #{target} already exists"
+    else
+      `ln -s #{File.expand_path file} #{target}`
+      puts " -> linked #{file} to #{target}"
+    end
+  end
+end
