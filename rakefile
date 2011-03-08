@@ -1,9 +1,11 @@
 #!/usr/bin/env ruby
 
+desc "Update Vim plugins registered as submodules"
 task :update_vim_plugins do |t|
   sh "git submodule foreach 'git pull origin master'"
 end
 
+desc "Create symlinks to config files in home directory"
 task :install do |t|
   files_to_ignore = %w(
     .
