@@ -48,4 +48,21 @@ export HISTSIZE=200
 # cdpath
 cdpath=(~ ~/Projects)
 
+# run_test functional/users_controller
+run_test() {
+  cd test
+  ruby $1_test.rb
+  cd ..
+}
+
+# run_fun_test users
+run_fun_test(){
+  run_test functional/$1_controller
+}
+
+# run_unit_test user
+run_unit_test(){
+  run_test unit/$1
+}
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
