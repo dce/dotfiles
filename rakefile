@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
 
-desc "Update Vim plugins registered as submodules"
-task :update_vim_plugins do |t|
-  sh "git submodule foreach 'git pull origin master'"
-end
-
 desc "Create symlinks to config files in home directory"
 task :install do |t|
   files_to_ignore = %w(
@@ -28,5 +23,12 @@ task :install do |t|
       `ln -s #{File.expand_path file} #{target}`
       puts " -> linked #{file} to #{target}"
     end
+  end
+end
+
+namespace :vim do
+  desc "Update Vim plugins registered as submodules"
+  task :update_plugins do |t|
+    sh "git submodule foreach 'git pull origin master'"
   end
 end
