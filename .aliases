@@ -31,3 +31,5 @@ alias tfdev='tail -f -n 200 log/development.log'
 # MP3 Downloader
 alias mp3="~/Projects/scripts/mp3.rb"
 
+# Homebrew
+alias bu="brew update && brew outdated"
