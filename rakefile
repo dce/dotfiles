@@ -26,16 +26,14 @@ task :install do |t|
   end
 end
 
-namespace :vim do
-  desc "Update Vim plugins registered as submodules"
-  task :update_plugins do |t|
-    sh "git submodule foreach 'git pull origin master'"
-  end
+desc "Update Vim plugins registered as submodules"
+task :update_vim_plugins do |t|
+  sh "git submodule foreach 'git pull origin master'"
+end
 
-  desc "Install VIM plugin from clipboard"
-  task :add_plugin do |t|
-    repo = `pbpaste`
-    name = repo.split("/").last.gsub(".git","")
-    sh "git submodule add #{repo} .vim/bundle/#{name}"
-  end
+desc "Install VIM plugin from clipboard"
+task :add_vim_plugin do |t|
+  repo = `pbpaste`
+  name = repo.split("/").last.gsub(".git","")
+  sh "git submodule add #{repo} .vim/bundle/#{name}"
 end
