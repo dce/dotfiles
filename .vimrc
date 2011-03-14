@@ -21,13 +21,13 @@ map <leader>b :FufBuffer<CR>
 map <F2> :set nowrap!<CR>
 
 " disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+nmap <up> <nop>
+nmap <down> <nop>
+nmap <left> <nop>
+nmap <right> <nop>
+vmap <up> <nop>
+vmap <down> <nop>
+vmap <left> <nop>
+vmap <right> <nop>
 
 command Md !markdown % | bcat
