@@ -13,7 +13,7 @@ setopt auto_cd
 setopt auto_pushd pushd_ignore_dups pushdminus
 
 # use vim as an editor
-export EDITOR=vim
+export EDITOR="mvim -f"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
