@@ -12,6 +12,9 @@ set expandtab " use spaces instead of tabs
 set number " line numbers
 set hidden
 
+set foldmethod=syntax
+set foldlevelstart=20
+
 colo github
 
 let mapleader = ","
