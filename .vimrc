@@ -16,6 +16,10 @@ set cursorline
 set foldmethod=syntax
 set foldlevelstart=20
 
+" keep tmp files in a safe place
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 colo github
 
 let mapleader = ","
