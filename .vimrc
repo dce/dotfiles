@@ -11,6 +11,7 @@ set expandtab " use spaces instead of tabs
 
 set number " line numbers
 set hidden
+set cursorline
 
 set foldmethod=syntax
 set foldlevelstart=20
