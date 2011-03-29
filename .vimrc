@@ -39,3 +39,4 @@ vmap <left> <nop>
 vmap <right> <nop>
 
 command Md !markdown % | bcat
+command Strip %s/\s\+$// | w
