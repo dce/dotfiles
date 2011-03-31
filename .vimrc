@@ -20,7 +20,8 @@ set foldlevelstart=20
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-colo github
+set background=dark
+colorscheme solarized
 
 let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
