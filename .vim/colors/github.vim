@@ -53,6 +53,8 @@ hi Special              guifg=#dd1144
 	hi Delimiter        guifg=#dd1144
 	hi SpecialComment   guifg=#999999 gui=bold,italic
 	hi Debug            guifg=#aa0000
+  hi NonText              guifg=#cccccc
+  hi SpecialKey           guifg=#cccccc
 
 hi Underlined           gui=underline
 

@@ -12,6 +12,7 @@ set expandtab " use spaces instead of tabs
 set number " line numbers
 set hidden
 set cursorline
+set nowrap
 
 set foldmethod=syntax
 set foldlevelstart=20
@@ -20,14 +21,14 @@ set foldlevelstart=20
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
-set background=dark
-colorscheme solarized
+colorscheme github
 
 let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <F2> :set nowrap!<CR>
+map <F3> :set list!<CR>
 
 " disable arrow keys
 nmap <up> <nop>
