@@ -27,8 +27,10 @@ let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
+
 map <F2> :set nowrap!<CR>
-map <F3> :set list!<CR>
+map <F3> :set linebreak!<CR>
+map <F4> :set list!<CR>
 
 " disable arrow keys
 nmap <up> <nop>
