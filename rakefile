@@ -6,6 +6,7 @@ task :install do |t|
     .
     ..
     .git
+    .gitignore
     .gitmodules
     rakefile
     README.md)
