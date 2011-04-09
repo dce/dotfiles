@@ -1,6 +1,6 @@
 export CLICOLOR=1
 export NODE_PATH=/usr/local/lib/node
-export PATH=$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin
+export PATH=/usr/local/bin:$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin
 
 # completion
 autoload -U compinit
