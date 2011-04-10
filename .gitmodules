@@ -34,3 +34,6 @@
 [submodule ".vim/bundle/vim-ragtag"]
 	path = .vim/bundle/vim-ragtag
 	url = https://github.com/tpope/vim-ragtag.git
+[submodule ".vim/bundle/github_vim_theme"]
+	path = .vim/bundle/github_vim_theme
+	url = git@github.com:dce/github_vim_theme.git
