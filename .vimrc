@@ -17,6 +17,8 @@ set nowrap
 set foldmethod=syntax
 set foldlevelstart=20
 
+set tags=tagfile
+
 " keep tmp files in a safe place
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
