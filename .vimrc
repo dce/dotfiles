@@ -23,6 +23,8 @@ set tags=tagfile
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
+
 colorscheme github
 
 let mapleader = ","
