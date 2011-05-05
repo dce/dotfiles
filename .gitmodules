@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/github_vim_theme"]
 	path = .vim/bundle/github_vim_theme
 	url = git@github.com:dce/github_vim_theme.git
+[submodule ".vim/bundle/vim-l9"]
+	path = .vim/bundle/vim-l9
+	url = https://github.com/clones/vim-l9.git
