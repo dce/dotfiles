@@ -30,6 +30,10 @@ end
 desc "Update Vim plugins registered as submodules"
 task :update_vim_plugins do |t|
   sh "git submodule foreach 'git pull origin master'"
+  updated = `git status`.scan(/modified:   .vim\/bundle\/([^ ]+)/)
+  if updated.any?
+    sh "git commit -am \"Update Vim plugins: #{ updated * ", " }\""
+  end
 end
 
 desc "Install VIM plugin from clipboard"
