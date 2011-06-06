@@ -29,6 +29,10 @@ bindkey ^R history-incremental-search-backward
 bindkey ^A beginning-of-line
 bindkey ^E end-of-line
 
+bindkey "^[[3~"  delete-char
+bindkey "^[3;5~" delete-char
+
+
 # expand functions in the prompt
 setopt prompt_subst
 
