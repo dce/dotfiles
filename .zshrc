@@ -43,6 +43,13 @@ function git-branch() {
 # prompt
 export PS1='%~[`git-branch`] > '
 
+# shared history (http://derekreeve.com/2010/01/shared-command-history-with-zsh/)
+setopt share_history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zsh_history
+setopt APPEND_HISTORY
+
 # ignore duplicate history entries
 setopt histignoredups
 
