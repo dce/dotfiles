@@ -76,4 +76,9 @@ run_unit_test(){
   run_test unit/$1
 }
 
+# boosh commits
+boosh() {
+  boom echo $1 | sh
+}
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
