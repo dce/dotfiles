@@ -18,6 +18,7 @@ alias gpp='git pull --rebase && git push'
 alias gmf='git merge --ff-only'
 alias gcp='git cherry-pick'
 alias gwp='git whatchanged -p'
+alias gch='git cherry -v'
 
 # Passenger
 alias rr="touch tmp/restart.txt"
