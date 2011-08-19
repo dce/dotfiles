@@ -27,8 +27,9 @@ alias rr="touch tmp/restart.txt"
 alias ss="script/server"
 alias sc="script/console"
 alias sg="script/generate"
-alias tfdev="tail -f -n 200 log/development.log"
-alias tftest="tail -f -n 200 log/test.log"
+alias tf="tail -f -n 200"
+alias tfdev="tf log/development.log"
+alias tftest="tf log/test.log"
 
 # MP3 Downloader
 alias mp3="~/Projects/scripts/mp3.rb"
