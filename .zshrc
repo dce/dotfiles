@@ -77,6 +77,11 @@ run_unit_test(){
   run_test unit/$1
 }
 
+# run_int_test redirector
+run_int_test(){
+  run_test integration/$1
+}
+
 # boosh commits
 boosh() {
   boom echo $1 | sh
