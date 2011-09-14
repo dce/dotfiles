@@ -48,5 +48,15 @@ vmap <down> <nop>
 vmap <left> <nop>
 vmap <right> <nop>
 
+" disable middle-click paste
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
+
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
