@@ -27,7 +27,8 @@ au BufRead,BufNewFile *.mobile.erb set filetype=html
 
 autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
 
-colorscheme desert
+set background=dark
+colorscheme solarized
 
 let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
