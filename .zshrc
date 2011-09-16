@@ -38,11 +38,12 @@ bindkey "^[3;5~" delete-char
 setopt prompt_subst
 
 function git-branch() {
-  git branch 2> /dev/null | grep '^\*' | sed 's/^\*\ //'
+  branch=$(git branch 2> /dev/null | grep '^\*' | sed 's/^\*\ //')
+  [[ -n $branch ]] && echo "[$branch]"
 }
 
 # prompt
-export PS1='%~[`git-branch`] > '
+export PS1='%~`git-branch` > '
 
 # shared history (http://derekreeve.com/2010/01/shared-command-history-with-zsh/)
 setopt share_history
