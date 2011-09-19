@@ -59,5 +59,11 @@ imap <3-MiddleMouse> <Nop>
 map <4-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
 
+" Command-T
+let CommandTMaxFiles = 20000
+let CommandTAlwaysShowDotFiles = 1
+let CommandTScanDotDirectories = 1
+set wildignore=.git,vendor,coverage,test/coverage,public/images,public/system
+
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
