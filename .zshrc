@@ -21,6 +21,11 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
+# github
+if [ -e "$HOME/.github" ]; then
+  source "$HOME/.github"
+fi
+
 # vi mode
 bindkey -v
 
