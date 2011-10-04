@@ -36,3 +36,4 @@ alias mp3="~/Projects/scripts/mp3.rb"
 
 # Homebrew
 alias bu="brew update && brew outdated"
+alias ua="rvm get head && rake update_vim_plugins && bu"
