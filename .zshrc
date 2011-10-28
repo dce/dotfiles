@@ -26,6 +26,9 @@ if [ -e "$HOME/.github" ]; then
   source "$HOME/.github"
 fi
 
+# max open files (default 256)
+ulimit -n 4096
+
 # vi mode
 bindkey -v
 

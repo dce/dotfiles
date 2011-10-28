@@ -6,3 +6,5 @@
 [core]
   editor = mvim -f
   excludesfile = /Users/dce/.gitignore_global
+[rerere]
+	enabled = 1
