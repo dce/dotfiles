@@ -1,10 +1,10 @@
 [user]
-	name = David Eisinger
-	email = david.eisinger@gmail.com
+  name = David Eisinger
+  email = david.eisinger@gmail.com
 [color]
   diff = always
 [core]
   editor = mvim -f
   excludesfile = /Users/dce/.gitignore_global
 [rerere]
-	enabled = 1
+  enabled = 1
