@@ -1,7 +1,7 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export NODE_PATH=/usr/local/lib/node
-export PATH=/usr/local/bin:$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin:/usr/local/sbin
+export PATH=/usr/local/bin:$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin:/usr/local/sbin:~/.rvm/bin
 
 # completion
 autoload -U compinit
