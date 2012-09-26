@@ -40,5 +40,5 @@ desc "Install VIM plugin from clipboard"
 task :add_vim_plugin do |t|
   repo = `pbpaste`
   name = repo.split("/").last.gsub(".git","")
-  sh "git submodule add #{repo} .vim/bundle/#{name} && git submodule init"
+  sh "git submodule add -f #{repo} .vim/bundle/#{name} && git submodule init"
 end
