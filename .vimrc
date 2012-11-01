@@ -50,6 +50,10 @@ vmap <down> <nop>
 vmap <left> <nop>
 vmap <right> <nop>
 
+" move by visual line rather than file line
+nnoremap j gj
+nnoremap k gk
+
 " disable middle-click paste
 map <MiddleMouse> <Nop>
 imap <MiddleMouse> <Nop>
