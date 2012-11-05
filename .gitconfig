@@ -8,3 +8,5 @@
   excludesfile = /Users/dce/.gitignore_global
 [rerere]
   enabled = 1
+[push]
+	default = simple
