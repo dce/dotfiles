@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin:/usr/local/sbin:~/.rvm/bin
+export PATH=/usr/local/bin:$PATH:~/Projects/scripts:/usr/local/share/npm/bin:~/.bin:/usr/local/sbin:~/.rvm/bin:/Applications/LibreOffice.app/Contents/MacOS
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
