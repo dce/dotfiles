@@ -35,6 +35,7 @@ let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
+map <leader>t :CtrlP<CR>
 
 map <F2> :set nowrap!<CR>
 map <F3> :set linebreak!<CR>
@@ -64,11 +65,15 @@ imap <3-MiddleMouse> <Nop>
 map <4-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
 
+
+" ctrlp
+let g:ctrlp_show_hidden = 1
+
 " Command-T
-let CommandTMaxFiles = 20000
-let CommandTAlwaysShowDotFiles = 1
-let CommandTScanDotDirectories = 1
-set wildignore=.git,vendor,coverage,test/coverage,public/images,public/system,public/uploads
+" let CommandTMaxFiles = 20000
+" let CommandTAlwaysShowDotFiles = 1
+" let CommandTScanDotDirectories = 1
+" set wildignore=.git,vendor,coverage,test/coverage,public/images,public/system,public/uploads
 
 " hide scrollbars
 set guioptions-=rL
