@@ -119,4 +119,5 @@ boosh() {
 # Display hard tabs as two spaces
 tabs -2
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
