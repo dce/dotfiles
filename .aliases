@@ -32,6 +32,7 @@ alias sg="script/generate"
 alias tf="tail -f -n 200"
 alias tfdev="tf log/development.log"
 alias tftest="tf log/test.log"
+alias be="bundle exec"
 
 # MP3 Downloader
 alias mp3="~/Projects/scripts/mp3.rb"
