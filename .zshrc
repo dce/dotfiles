@@ -68,7 +68,7 @@ setopt histignoredups
 export HISTSIZE=200
 
 # cdpath
-cdpath=(~ ~/Projects)
+cdpath=(~ ~/Projects ~/Dropbox)
 
 # run_test functional/users_controller
 run_test() {
