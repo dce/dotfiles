@@ -125,3 +125,6 @@ source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 chruby 2.1
+
+# OPAM configuration
+. /Users/dce/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
