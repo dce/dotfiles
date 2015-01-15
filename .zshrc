@@ -16,6 +16,9 @@ plugins=(git brew rvm)
 
 source $ZSH/oh-my-zsh.sh
 
+# http://superuser.com/questions/613685/how-stop-zsh-from-eating-space-before-pipe-symbol
+ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
+
 # completion
 autoload -U compinit
 compinit
@@ -70,33 +73,6 @@ export HISTSIZE=200
 # cdpath
 cdpath=(~ ~/Projects ~/Dropbox)
 
-# run_test functional/users_controller
-run_test() {
-  cd test
-  ruby $1_test.rb
-  cd ..
-}
-
-# run_fun_test users
-run_fun_test(){
-  run_test functional/$1_controller
-}
-
-# run_unit_test user
-run_unit_test(){
-  run_test unit/$1
-}
-
-# run_int_test redirector
-run_int_test(){
-  run_test integration/$1
-}
-
-# boosh commits
-boosh() {
-  boom echo $1 | sh
-}
-
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -121,10 +97,10 @@ tabs -2
 
 export GOPATH=/Users/dce/gocode
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-
-chruby 2.1
-
 # OPAM configuration
 . /Users/dce/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
