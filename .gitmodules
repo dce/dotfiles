@@ -82,3 +82,6 @@
 [submodule ".vim/bundle/vim2hs"]
 	path = .vim/bundle/vim2hs
 	url = git@github.com:dag/vim2hs.git
+[submodule ".vim/bundle/vim-pandoc-syntax"]
+	path = .vim/bundle/vim-pandoc-syntax
+	url = git@github.com:vim-pandoc/vim-pandoc-syntax.git
