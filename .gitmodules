@@ -85,3 +85,27 @@
 [submodule ".vim/bundle/vim-pandoc-syntax"]
 	path = .vim/bundle/vim-pandoc-syntax
 	url = git@github.com:vim-pandoc/vim-pandoc-syntax.git
+[submodule ".vim/bundle/vim-materialtheme"]
+	path = .vim/bundle/vim-materialtheme
+	url = git@github.com:Wutzara/vim-materialtheme.git
+[submodule ".vim/bundle/shades-of-teal"]
+	path = .vim/bundle/shades-of-teal
+	url = https://github.com/kristiandupont/shades-of-teal
+[submodule ".vim/bundle/vim-monochrome"]
+	path = .vim/bundle/vim-monochrome
+	url = https://github.com/fxn/vim-monochrome
+[submodule ".vim/bundle/inori"]
+	path = .vim/bundle/inori
+	url = https://github.com/duythinht/inori
+[submodule ".vim/bundle/gruvbox"]
+	path = .vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule ".vim/bundle/flatlandia"]
+	path = .vim/bundle/flatlandia
+	url = https://github.com/jordwalke/flatlandia
+[submodule ".vim/bundle/vim-nefertiti"]
+	path = .vim/bundle/vim-nefertiti
+	url = git@github.com:jeetsukumaran/vim-nefertiti.git
+[submodule ".vim/bundle/vim-sorcerer"]
+	path = .vim/bundle/vim-sorcerer
+	url = https://github.com/adlawson/vim-sorcerer
