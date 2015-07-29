@@ -68,6 +68,7 @@ imap <4-MiddleMouse> <Nop>
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
+set wildignore+=*/node_modules/*,*/public/system/*
 
 " Command-T
 " let CommandTMaxFiles = 20000
