@@ -2,6 +2,8 @@ call pathogen#helptags()
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+syntax on
+
 set guifont=Monaco:h12
 set tabstop=2 " width of a tab
 set shiftwidth=2 " width of shift (< and >)
@@ -14,6 +16,14 @@ set number " line numbers
 set hidden
 set cursorline
 set nowrap
+
+" http://unix.stackexchange.com/a/76385
+set backspace=indent,eol,start
+
+" http://vim.wikia.com/wiki/Change_cursor_shape_in_different_modes
+let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 set foldmethod=syntax
 set foldlevelstart=20
@@ -30,6 +40,8 @@ autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
 
 set background=dark
 colorscheme gruvbox
+
+hi CursorLine cterm=NONE
 
 let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>

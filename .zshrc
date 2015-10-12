@@ -1,4 +1,4 @@
-export PATH=~/.bin:/usr/local/Cellar/go/1.2/libexec/bin:$PATH
+export PATH=/usr/local/bin:~/.bin:/usr/local/Cellar/go/1.2/libexec/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -30,7 +30,7 @@ setopt auto_cd
 setopt prompt_subst
 
 # use vim as an editor
-export EDITOR="mvim -f"
+export EDITOR="vim";
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
