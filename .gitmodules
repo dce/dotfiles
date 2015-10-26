@@ -109,3 +109,6 @@
 [submodule ".vim/bundle/vim-sorcerer"]
 	path = .vim/bundle/vim-sorcerer
 	url = https://github.com/adlawson/vim-sorcerer
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git

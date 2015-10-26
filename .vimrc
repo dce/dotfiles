@@ -91,5 +91,7 @@ set wildignore+=*/node_modules/*,*/public/system/*
 " hide scrollbars
 set guioptions-=rL
 
+" always enable airline
+set laststatus=2
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
