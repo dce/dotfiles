@@ -93,5 +93,8 @@ set guioptions-=rL
 
 " always enable airline
 set laststatus=2
+let g:airline_powerline_fonts=1
+set guifont=Monaco\ for\ Powerline
+
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
