@@ -1,11 +1,18 @@
 [user]
   name = David Eisinger
-  email = david.eisinger@gmail.com
+  email = david.eisinger@viget.com
 [color]
+  ui = always
   diff = always
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [core]
   editor = vim
   excludesfile = /Users/dce/.gitignore_global
+  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [rerere]
   enabled = 1
 [push]
