@@ -96,5 +96,7 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 set guifont=Monaco\ for\ Powerline
 
+let g:jsx_ext_required = 0
+
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
