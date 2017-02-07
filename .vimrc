@@ -38,8 +38,8 @@ au BufRead,BufNewFile *.mobile.erb set filetype=html
 
 autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
 
-set background=dark
-colorscheme gruvbox
+" set background=dark
+" colorscheme gruvbox
 
 hi CursorLine cterm=NONE
 
