@@ -3,6 +3,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'godlygeek/tabular'
+Plug 'tpope/vim-endwise'
+Plug 'mxw/vim-jsx'
+Plug 'sbdchd/neoformat'
 
 call plug#end()
 
