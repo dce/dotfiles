@@ -9,6 +9,7 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-endwise'
 Plug 'mxw/vim-jsx'
 Plug 'sbdchd/neoformat'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
