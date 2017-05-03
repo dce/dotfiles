@@ -45,6 +45,7 @@ hi CursorLine cterm=NONE
 
 let mapleader = ","
 map <leader>d :NERDTreeToggle<CR>
+map <leader>D :NERDTreeFind<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>t :CtrlP<CR>
