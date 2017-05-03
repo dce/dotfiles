@@ -1,6 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
