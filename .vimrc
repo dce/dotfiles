@@ -1,8 +1,10 @@
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
 
-syntax on
+Plug 'kien/ctrlp.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+
+call plug#end()
 
 set guifont=Monaco:h12
 set tabstop=2 " width of a tab
