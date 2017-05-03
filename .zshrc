@@ -102,6 +102,9 @@ export GOPATH=/Users/dce/gocode
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+export PATH="/Users/dce/.config/yarn/global/node_modules/.bin:$PATH"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
