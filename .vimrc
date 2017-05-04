@@ -13,6 +13,7 @@ Plug 'tpope/vim-commentary'
 Plug 'clones/vim-l9'
 Plug 'clones/vim-fuzzyfinder'
 Plug 'msanders/snipmate.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
@@ -118,6 +119,9 @@ let g:neoformat_javascript_prettier = {
       \ }
 
 let g:neoformat_enabled_javascript = ['prettier']
+
+" Disable tmux navigator when zooming the Vim pane
+let g:tmux_navigator_disable_when_zoomed = 1
 
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
