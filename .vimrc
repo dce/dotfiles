@@ -10,6 +10,9 @@ Plug 'tpope/vim-endwise'
 Plug 'mxw/vim-jsx'
 Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-commentary'
+Plug 'clones/vim-l9'
+Plug 'clones/vim-fuzzyfinder'
+Plug 'msanders/snipmate.vim'
 
 call plug#end()
 
