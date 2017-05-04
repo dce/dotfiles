@@ -61,6 +61,7 @@ map <leader>D :NERDTreeFind<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>t :CtrlP<CR>
+map <C-M> :Neoformat<CR>
 
 map <F2> :set nowrap!<CR>
 map <F3> :set linebreak!<CR>
@@ -110,6 +111,13 @@ let g:airline_powerline_fonts=1
 set guifont=Monaco\ for\ Powerline
 
 let g:jsx_ext_required = 0
+
+let g:neoformat_javascript_prettier = {
+      \ 'exe': '/Users/dce/.config/yarn/global/node_modules/.bin/prettier',
+      \ 'args': ['--single-quote', '--no-semi']
+      \ }
+
+let g:neoformat_enabled_javascript = ['prettier']
 
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
