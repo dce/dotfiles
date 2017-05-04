@@ -51,9 +51,6 @@ au BufRead,BufNewFile *.mobile.erb set filetype=html
 
 autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
 
-" set background=dark
-" colorscheme gruvbox
-
 hi CursorLine cterm=NONE
 
 let mapleader = ","
@@ -92,16 +89,9 @@ imap <3-MiddleMouse> <Nop>
 map <4-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
 
-
 " ctrlp
 let g:ctrlp_show_hidden = 1
 set wildignore+=*/node_modules/*,*/public/system/*
-
-" Command-T
-" let CommandTMaxFiles = 20000
-" let CommandTAlwaysShowDotFiles = 1
-" let CommandTScanDotDirectories = 1
-" set wildignore=.git,vendor,coverage,test/coverage,public/images,public/system,public/uploads
 
 " hide scrollbars
 set guioptions-=rL
