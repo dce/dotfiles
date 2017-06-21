@@ -8,12 +8,12 @@ Plug 'tpope/vim-rails'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-endwise'
 Plug 'mxw/vim-jsx'
-Plug 'sbdchd/neoformat'
 Plug 'tpope/vim-commentary'
 Plug 'clones/vim-l9'
 Plug 'clones/vim-fuzzyfinder'
 Plug 'msanders/snipmate.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'mitermayer/vim-prettier'
 
 call plug#end()
 
@@ -59,8 +59,6 @@ map <leader>D :NERDTreeFind<CR>
 map <leader>f :FufFile<CR>
 map <leader>b :FufBuffer<CR>
 map <leader>t :CtrlP<CR>
-map <C-M> :Neoformat<CR>
-
 map <F2> :set nowrap!<CR>
 map <F3> :set linebreak!<CR>
 map <F4> :set list!<CR>
@@ -103,15 +101,11 @@ set guifont=Monaco\ for\ Powerline
 
 let g:jsx_ext_required = 0
 
-let g:neoformat_javascript_prettier = {
-      \ 'exe': '/Users/dce/.config/yarn/global/node_modules/.bin/prettier',
-      \ 'args': ['--single-quote', '--no-semi']
-      \ }
-
-let g:neoformat_enabled_javascript = ['prettier']
-
 " Disable tmux navigator when zooming the Vim pane
 let g:tmux_navigator_disable_when_zoomed = 1
+
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#semi = 'false'
 
 command Md !markdown % | bcat
 command Strip %s/\s\+$// | w
