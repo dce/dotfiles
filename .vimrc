@@ -14,6 +14,7 @@ Plug 'clones/vim-fuzzyfinder'
 Plug 'msanders/snipmate.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mitermayer/vim-prettier'
+Plug 'kchmck/vim-coffee-script'
 
 call plug#end()
 
