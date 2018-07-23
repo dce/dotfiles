@@ -8,3 +8,5 @@ snippet rind
 	remove_index :${1:table_name}, :${2:column_name}
 snippet fcs
 	:focus => true
+snippet afk
+	add_foreign_key :${1:table_name}, :${2:table_name}, on_delete: :${3:cascade}
