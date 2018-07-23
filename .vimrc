@@ -15,6 +15,7 @@ Plug 'msanders/snipmate.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'mitermayer/vim-prettier'
 Plug 'kchmck/vim-coffee-script'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
