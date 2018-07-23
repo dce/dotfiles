@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:~/.bin:/usr/local/Cellar/go/1.2/libexec/bin:$PATH
+export PATH=/usr/local/bin:~/.bin:/usr/local/Cellar/go/1.2/libexec/bin:~/code/q/bin:$PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
