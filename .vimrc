@@ -49,8 +49,9 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 au BufRead,BufNewFile *.mobile.erb set filetype=html
+au BufRead,BufNewFile *.ft set filetype=markdown
 
-autocmd BufRead,BufNewFile {*.markdown,*.md} set wrap linebreak spell
+autocmd BufRead,BufNewFile {*.markdown,*.md,*.ft} set wrap linebreak spell
 
 hi CursorLine cterm=NONE
 
